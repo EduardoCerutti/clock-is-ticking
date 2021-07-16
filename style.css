@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#seconds {
+  animation: pointer 1s linear infinite;
+  transform-origin: center;
+}
+
+#minutes {
+  animation: pointer 4s linear infinite;
+  transform-origin: center;
+}
+
+#hours {
+  animation: pointer 8s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes pointer {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
